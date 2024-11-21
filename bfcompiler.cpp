@@ -31,6 +31,7 @@ int main(int argc, char* argv[]) {
 
     while (in) {
 
+        s = "";
         in >> s;
         instructions.append(s);
 
@@ -80,7 +81,7 @@ int main(int argc, char* argv[]) {
             
             }
 
-            case '.': cout << "cout << (char) *ptr;\n"; break;
+            case '.': cout << "cout << *ptr;\n"; break;
 
             case ',': cout << "cin >> inp;\n*ptr= (int) inp;\n"; break;
 
